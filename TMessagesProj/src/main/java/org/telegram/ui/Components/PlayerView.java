@@ -225,7 +225,7 @@ public class PlayerView extends FrameLayout implements NotificationCenter.Notifi
             if (lastMessageObject != messageObject) {
                 lastMessageObject = messageObject;
                 SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("%s - %s", messageObject.getMusicAuthor(), messageObject.getMusicTitle()));
-                TypefaceSpan span = new TypefaceSpan(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+                TypefaceSpan span = new TypefaceSpan(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
                 stringBuilder.setSpan(span, 0, messageObject.getMusicAuthor().length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
                 titleTextView.setText(stringBuilder);
             }

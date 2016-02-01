@@ -79,7 +79,7 @@ public class ChatMusicCell extends ChatBaseCell implements SeekBar.SeekBarDelega
             titlePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             titlePaint.setTextSize(AndroidUtilities.dp(16));
             titlePaint.setColor(0xff212121);
-            titlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            titlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
 
             authorPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             authorPaint.setTextSize(AndroidUtilities.dp(15));
