@@ -382,7 +382,7 @@ public class PopupNotificationActivity extends Activity implements NotificationC
         nameTextView.setSingleLine(true);
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);
         nameTextView.setGravity(Gravity.LEFT);
-        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         avatarContainer.addView(nameTextView);
         layoutParams2 = (FrameLayout.LayoutParams) nameTextView.getLayoutParams();
         layoutParams2.width = LayoutHelper.WRAP_CONTENT;

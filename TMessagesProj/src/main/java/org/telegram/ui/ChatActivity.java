@@ -1055,7 +1055,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);
         nameTextView.setGravity(Gravity.LEFT);
         nameTextView.setCompoundDrawablePadding(AndroidUtilities.dp(4));
-        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         avatarContainer.addView(nameTextView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.LEFT | Gravity.BOTTOM, 54, 0, 0, 22));
 
         onlineTextView = new TextView(context);
@@ -1183,7 +1183,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
 
         selectedMessagesCountTextView = new NumberTextView(actionMode.getContext());
         selectedMessagesCountTextView.setTextSize(18);
-        selectedMessagesCountTextView.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        selectedMessagesCountTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         selectedMessagesCountTextView.setTextColor(0xff737373);
         actionMode.addView(selectedMessagesCountTextView, LayoutHelper.createLinear(0, LayoutHelper.MATCH_PARENT, 1.0f, 65, 0, 0, 0));
         selectedMessagesCountTextView.setOnTouchListener(new View.OnTouchListener() {
@@ -1621,7 +1621,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         addToContactsButton = new TextView(context);
         addToContactsButton.setTextColor(0xff4a82b5);
         addToContactsButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
-        addToContactsButton.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        addToContactsButton.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         addToContactsButton.setSingleLine(true);
         addToContactsButton.setMaxLines(1);
         addToContactsButton.setPadding(AndroidUtilities.dp(4), 0, AndroidUtilities.dp(4), 0);
@@ -1644,7 +1644,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         reportSpamButton = new TextView(context);
         reportSpamButton.setTextColor(0xffcf5957);
         reportSpamButton.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
-        reportSpamButton.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        reportSpamButton.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         reportSpamButton.setSingleLine(true);
         reportSpamButton.setMaxLines(1);
         reportSpamButton.setText(LocaleController.getString("ReportSpam", R.string.ReportSpam));
@@ -2095,7 +2095,7 @@ public class ChatActivity extends BaseFragment implements NotificationCenter.Not
         replyNameTextView = new TextView(context);
         replyNameTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
         replyNameTextView.setTextColor(0xff377aae);
-        replyNameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        replyNameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         replyNameTextView.setSingleLine(true);
         replyNameTextView.setEllipsize(TextUtils.TruncateAt.END);
         replyNameTextView.setMaxLines(1);

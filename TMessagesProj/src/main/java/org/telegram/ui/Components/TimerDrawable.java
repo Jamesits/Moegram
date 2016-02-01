@@ -38,7 +38,7 @@ public class TimerDrawable extends Drawable {
             timePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             timePaint.setTextSize(AndroidUtilities.dp(11));
             timePaint.setColor(0xffffffff);
-            timePaint.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+            timePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         }
     }
 

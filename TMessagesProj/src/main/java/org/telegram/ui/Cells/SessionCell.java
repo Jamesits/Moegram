@@ -53,7 +53,7 @@ public class SessionCell extends FrameLayout {
         nameTextView.setTextColor(0xff212121);
         nameTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
         nameTextView.setLines(1);
-        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         nameTextView.setMaxLines(1);
         nameTextView.setSingleLine(true);
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);

@@ -116,7 +116,7 @@ public class ChatMediaCell extends ChatBaseCell {
 
             locationTitlePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             locationTitlePaint.setTextSize(AndroidUtilities.dp(14));
-            locationTitlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/NotoSansCJK-Medium.ttc"));
+            locationTitlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
 
             locationAddressPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             locationAddressPaint.setTextSize(AndroidUtilities.dp(14));
