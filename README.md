@@ -12,6 +12,7 @@ Moegram channel: [https://telegram.me/moegram](https://telegram.me/moegram)
 
  * [kaoyusu/XposedMod_TelegramWithAndroidEmoji](https://github.com/kaoyusu/XposedMod_TelegramWithAndroidEmoji)
  * [com.amulyakhare.textdrawable.TextDrawable](https://github.com/amulyakhare/TextDrawable)
+ * [Noto Sans CJK - Google Noto Fonts](https://www.google.com/get/noto/help/cjk/)
 
 --------------
 
