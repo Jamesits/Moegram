@@ -45,6 +45,7 @@ import org.telegram.messenger.ImageReceiver;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Locale;
+import android.graphics.Typeface;
 
 public class ChatMediaCell extends ChatBaseCell {
 
@@ -116,7 +117,7 @@ public class ChatMediaCell extends ChatBaseCell {
 
             locationTitlePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             locationTitlePaint.setTextSize(AndroidUtilities.dp(14));
-            locationTitlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            locationTitlePaint.setTypeface(Typeface.DEFAULT_BOLD);
 
             locationAddressPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             locationAddressPaint.setTextSize(AndroidUtilities.dp(14));

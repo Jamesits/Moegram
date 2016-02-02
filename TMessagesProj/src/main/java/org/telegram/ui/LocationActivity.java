@@ -76,6 +76,7 @@ import org.telegram.ui.Components.MapPlaceholderDrawable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import android.graphics.Typeface;
 
 public class LocationActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
@@ -314,7 +315,7 @@ public class LocationActivity extends BaseFragment implements NotificationCenter
             nameTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
             nameTextView.setTextColor(0xff212121);
             nameTextView.setMaxLines(1);
-            nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            nameTextView.setTypeface(Typeface.DEFAULT_BOLD);
             nameTextView.setEllipsize(TextUtils.TruncateAt.END);
             nameTextView.setSingleLine(true);
             nameTextView.setGravity(LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT);

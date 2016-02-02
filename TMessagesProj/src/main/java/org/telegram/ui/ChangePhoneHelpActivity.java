@@ -31,6 +31,7 @@ import org.telegram.messenger.UserConfig;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.Components.LayoutHelper;
+import android.graphics.Typeface;
 
 public class ChangePhoneHelpActivity extends BaseFragment {
 
@@ -119,7 +120,7 @@ public class ChangePhoneHelpActivity extends BaseFragment {
         textView.setGravity(Gravity.CENTER_HORIZONTAL);
         textView.setTextColor(0xff4d83b3);
         textView.setText(LocaleController.getString("PhoneNumberChange", R.string.PhoneNumberChange));
-        textView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        textView.setTypeface(Typeface.DEFAULT_BOLD);
         textView.setPadding(0, AndroidUtilities.dp(10), 0, AndroidUtilities.dp(10));
         linearLayout.addView(textView);
         layoutParams2 = (LinearLayout.LayoutParams) textView.getLayoutParams();

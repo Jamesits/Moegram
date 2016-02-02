@@ -90,8 +90,8 @@ android {
     productFlavors {
         Moegram {
             applicationId "me.swineson.moegram.messenger"
-            versionCode 532
-            versionName '0.1.7-fontfix-alpha2'
+            versionCode 533
+            versionName '0.1.7-fontfix-alpha3'
         }
     }
 }

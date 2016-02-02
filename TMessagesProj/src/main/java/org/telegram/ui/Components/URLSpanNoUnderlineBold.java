@@ -11,6 +11,7 @@ package org.telegram.ui.Components;
 import android.text.TextPaint;
 
 import org.telegram.messenger.AndroidUtilities;
+import android.graphics.Typeface;
 
 public class URLSpanNoUnderlineBold extends URLSpanNoUnderline {
     public URLSpanNoUnderlineBold(String url) {
@@ -20,7 +21,7 @@ public class URLSpanNoUnderlineBold extends URLSpanNoUnderline {
     @Override
     public void updateDrawState(TextPaint ds) {
         super.updateDrawState(ds);
-        ds.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        ds.setTypeface(Typeface.DEFAULT_BOLD);
         ds.setUnderlineText(false);
     }
 }

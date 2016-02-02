@@ -19,6 +19,7 @@ import android.widget.TextView;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
+import android.graphics.Typeface;
 
 public class PickerBottomLayout extends FrameLayout {
 
@@ -46,7 +47,7 @@ public class PickerBottomLayout extends FrameLayout {
         cancelButton.setBackgroundResource(isDarkTheme ? R.drawable.bar_selector_picker : R.drawable.bar_selector_audio);
         cancelButton.setPadding(AndroidUtilities.dp(29), 0, AndroidUtilities.dp(29), 0);
         cancelButton.setText(LocaleController.getString("Cancel", R.string.Cancel).toUpperCase());
-        cancelButton.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        cancelButton.setTypeface(Typeface.DEFAULT_BOLD);
         addView(cancelButton, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.MATCH_PARENT, Gravity.TOP | Gravity.LEFT));
 
         doneButton = new LinearLayout(context);
@@ -56,7 +57,7 @@ public class PickerBottomLayout extends FrameLayout {
         addView(doneButton, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.MATCH_PARENT, Gravity.TOP | Gravity.RIGHT));
 
         doneButtonBadgeTextView = new TextView(context);
-        doneButtonBadgeTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        doneButtonBadgeTextView.setTypeface(Typeface.DEFAULT_BOLD);
         doneButtonBadgeTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
         doneButtonBadgeTextView.setTextColor(0xffffffff);
         doneButtonBadgeTextView.setGravity(Gravity.CENTER);
@@ -71,7 +72,7 @@ public class PickerBottomLayout extends FrameLayout {
         doneButtonTextView.setGravity(Gravity.CENTER);
         doneButtonTextView.setCompoundDrawablePadding(AndroidUtilities.dp(8));
         doneButtonTextView.setText(LocaleController.getString("Send", R.string.Send).toUpperCase());
-        doneButtonTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        doneButtonTextView.setTypeface(Typeface.DEFAULT_BOLD);
         doneButton.addView(doneButtonTextView, LayoutHelper.createLinear(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER_VERTICAL));
     }
 

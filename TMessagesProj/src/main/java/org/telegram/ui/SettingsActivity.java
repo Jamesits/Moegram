@@ -97,6 +97,7 @@ import org.telegram.ui.Components.NumberPicker;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Locale;
+import android.graphics.Typeface;
 
 public class SettingsActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, PhotoViewer.PhotoViewerProvider {
 
@@ -667,7 +668,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         nameTextView.setSingleLine(true);
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);
         nameTextView.setGravity(Gravity.LEFT);
-        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        nameTextView.setTypeface(Typeface.DEFAULT_BOLD);
         ViewProxy.setPivotX(nameTextView, 0);
         ViewProxy.setPivotY(nameTextView, 0);
         frameLayout.addView(nameTextView, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.LEFT | Gravity.TOP, 118, 0, 48, 0));

@@ -49,6 +49,7 @@ import org.telegram.ui.Cells.TextSettingsCell;
 import org.telegram.ui.Components.LayoutHelper;
 
 import java.util.ArrayList;
+import android.graphics.Typeface;
 
 public class SessionsActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
@@ -122,7 +123,7 @@ public class SessionsActivity extends BaseFragment implements NotificationCenter
         textView.setTextColor(0xff8a8a8a);
         textView.setGravity(Gravity.CENTER);
         textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 17);
-        textView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+        textView.setTypeface(Typeface.DEFAULT_BOLD);
         textView.setText(LocaleController.getString("NoOtherSessions", R.string.NoOtherSessions));
         emptyLayout.addView(textView);
         layoutParams2 = (LinearLayout.LayoutParams) textView.getLayoutParams();

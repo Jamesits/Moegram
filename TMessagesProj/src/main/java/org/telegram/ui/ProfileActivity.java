@@ -96,6 +96,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.concurrent.Semaphore;
+import android.graphics.Typeface;
 
 public class ProfileActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate, DialogsActivity.MessagesActivityDelegate, PhotoViewer.PhotoViewerProvider {
 
@@ -832,7 +833,7 @@ public class ProfileActivity extends BaseFragment implements NotificationCenter.
             nameTextView[a].setSingleLine(true);
             nameTextView[a].setEllipsize(TextUtils.TruncateAt.END);
             nameTextView[a].setGravity(Gravity.LEFT);
-            nameTextView[a].setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            nameTextView[a].setTypeface(Typeface.DEFAULT_BOLD);
             nameTextView[a].setCompoundDrawablePadding(AndroidUtilities.dp(4));
             ViewProxy.setPivotX(nameTextView[a], 0);
             ViewProxy.setPivotY(nameTextView[a], 0);

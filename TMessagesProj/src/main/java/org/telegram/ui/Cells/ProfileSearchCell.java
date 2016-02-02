@@ -32,6 +32,7 @@ import org.telegram.tgnet.TLObject;
 import org.telegram.tgnet.TLRPC;
 import org.telegram.messenger.UserConfig;
 import org.telegram.ui.Components.AvatarDrawable;
+import android.graphics.Typeface;
 
 public class ProfileSearchCell extends BaseCell {
 
@@ -95,12 +96,12 @@ public class ProfileSearchCell extends BaseCell {
             namePaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
             namePaint.setTextSize(AndroidUtilities.dp(17));
             namePaint.setColor(0xff212121);
-            namePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            namePaint.setTypeface(Typeface.DEFAULT_BOLD);
 
             nameEncryptedPaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
             nameEncryptedPaint.setTextSize(AndroidUtilities.dp(17));
             nameEncryptedPaint.setColor(0xff00a60e);
-            nameEncryptedPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            nameEncryptedPaint.setTypeface(Typeface.DEFAULT_BOLD);
 
             onlinePaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
             onlinePaint.setTextSize(AndroidUtilities.dp(16));
@@ -116,7 +117,7 @@ public class ProfileSearchCell extends BaseCell {
             countPaint = new TextPaint(TextPaint.ANTI_ALIAS_FLAG);
             countPaint.setTextSize(AndroidUtilities.dp(13));
             countPaint.setColor(0xffffffff);
-            countPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            countPaint.setTypeface(Typeface.DEFAULT_BOLD);
 
             broadcastDrawable = getResources().getDrawable(R.drawable.list_broadcast);
             lockDrawable = getResources().getDrawable(R.drawable.list_secret);

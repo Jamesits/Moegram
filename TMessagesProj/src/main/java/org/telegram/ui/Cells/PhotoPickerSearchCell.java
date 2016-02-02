@@ -25,6 +25,7 @@ import org.telegram.messenger.AnimationCompat.ViewProxy;
 import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
 import org.telegram.ui.Components.LayoutHelper;
+import android.graphics.Typeface;
 
 public class PhotoPickerSearchCell extends LinearLayout {
 
@@ -55,7 +56,7 @@ public class PhotoPickerSearchCell extends LinearLayout {
             textView1 = new TextView(context);
             textView1.setGravity(Gravity.CENTER_VERTICAL);
             textView1.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 14);
-            textView1.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            textView1.setTypeface(Typeface.DEFAULT_BOLD);
             textView1.setTextColor(0xffffffff);
             textView1.setSingleLine(true);
             textView1.setEllipsize(TextUtils.TruncateAt.END);
@@ -64,7 +65,7 @@ public class PhotoPickerSearchCell extends LinearLayout {
             textView2 = new TextView(context);
             textView2.setGravity(Gravity.CENTER_VERTICAL);
             textView2.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 10);
-            textView2.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            textView2.setTypeface(Typeface.DEFAULT_BOLD);
             textView2.setTextColor(0xff666666);
             textView2.setSingleLine(true);
             textView2.setEllipsize(TextUtils.TruncateAt.END);

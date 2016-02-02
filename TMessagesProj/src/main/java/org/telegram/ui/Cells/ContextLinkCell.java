@@ -39,6 +39,7 @@ import org.telegram.ui.Components.ResourceLoader;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Locale;
+import android.graphics.Typeface;
 
 public class ContextLinkCell extends View implements MediaController.FileDownloadProgressListener {
 
@@ -81,7 +82,7 @@ public class ContextLinkCell extends View implements MediaController.FileDownloa
 
         if (titleTextPaint == null) {
             titleTextPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
-            titleTextPaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            titleTextPaint.setTypeface(Typeface.DEFAULT_BOLD);
             titleTextPaint.setColor(0xff212121);
             titleTextPaint.setTextSize(AndroidUtilities.dp(15));
 

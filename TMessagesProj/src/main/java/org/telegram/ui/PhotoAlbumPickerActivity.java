@@ -45,6 +45,7 @@ import org.telegram.ui.Components.PickerBottomLayout;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import android.graphics.Typeface;
 
 public class PhotoAlbumPickerActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
@@ -186,7 +187,7 @@ public class PhotoAlbumPickerActivity extends BaseFragment implements Notificati
             dropDown.setMaxLines(1);
             dropDown.setEllipsize(TextUtils.TruncateAt.END);
             dropDown.setTextColor(0xffffffff);
-            dropDown.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
+            dropDown.setTypeface(Typeface.DEFAULT_BOLD);
             dropDown.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.ic_arrow_drop_down, 0);
             dropDown.setCompoundDrawablePadding(AndroidUtilities.dp(4));
             dropDown.setPadding(0, 0, AndroidUtilities.dp(10), 0);
