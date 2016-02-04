@@ -30,11 +30,11 @@
   <string name="Contacts">联系人</string>
   <string name="NewGroup">新建群组</string>
   <string name="Yesterday">昨天</string>
-  <string name="NoResult">查无结果</string>
+  <string name="NoResult">无结果</string>
   <string name="NoChats">暂无对话...</string>
   <string name="NoChatsHelp">请点击右下角的“新建对话”按钮开始对话\n或点击“菜单”按钮获取更多选项</string>
-  <string name="WaitingForNetwork">等待网络连接...</string>
-  <string name="Connecting">连接中...</string>
+  <string name="WaitingForNetwork">等待网络...</string>
+  <string name="Connecting">正在连接...</string>
   <string name="Updating">刷新中...</string>
   <string name="NewSecretChat">新建私密对话</string>
   <string name="AwaitingEncryption">等待%s上线...</string>
@@ -43,7 +43,7 @@
   <string name="EncryptedChatStartedOutgoing">%s 加入了您的私密对话。</string>
   <string name="EncryptedChatStartedIncoming">您已加入私密对话。</string>
   <string name="ClearHistory">清除聊天记录</string>
-  <string name="ClearHistoryCache">从缓存中清除</string>
+  <string name="ClearHistoryCache">清空缓存</string>
   <string name="DeleteChat">删除并退出</string>
   <string name="DeleteChatUser">删除对话</string>
   <string name="HiddenName">删除帐号</string>
@@ -52,9 +52,9 @@
   <string name="CompatibilityChat">%1$s 正在使用旧版 Telegram，因此私密图片会以兼容模式显示。\n\n当 %2$s 更新 Telegram 后，阅后即焚计时器设为1分钟以内时，图片会启用“长按预览”的模式；对方截屏时，也会通知您。</string>
   <string name="SearchMessages">搜索消息</string>
   <string name="Search">搜索</string>
-  <string name="MuteNotifications">静音</string>
-  <string name="MuteFor">静音 %1$s</string>
-  <string name="UnmuteNotifications">取消静音</string>
+  <string name="MuteNotifications">免打扰模式</string>
+  <string name="MuteFor">暂停通知 %1$s</string>
+  <string name="UnmuteNotifications">恢复消息通知</string>
   <string name="WillUnmuteIn"> %1$s 后</string>
   <string name="MuteDisable">永久静音</string>
   <string name="Hashtags">标签</string>
@@ -165,18 +165,18 @@
   <string name="ChannelMessageGroupContact">%1$s 在 %2$s 频道分享了一个联系信息</string>
   <string name="ChannelMessageGroupMap">%1$s 在 %2$s 频道发布了一个位置信息</string>
   <string name="ChannelMessageGroupDocument">%1$s 在 %2$s 频道发布了一个文件</string>
-  <string name="ChannelMessageGroupGif">%1$s 发送 GIF 到 %2$s 频道</string>
+  <string name="ChannelMessageGroupGif">%1$s 在 %2$s 频道发布了一个 GIF</string>
   <string name="ChannelMessageGroupAudio">%1$s 在 %2$s 频道发布了一条语音消息</string>
-  <string name="ChannelMessageGroupSticker">%1$s 在 %2$s 频道发布了一个贴图</string>
+  <string name="ChannelMessageGroupSticker">%1$s 在 %2$s 频道发布了一个贴纸</string>
   <string name="ChannelMessageNoText">%1$s 发布了一条消息</string>
   <string name="ChannelMessagePhoto">%1$s 发布了一张图片</string>
   <string name="ChannelMessageVideo">%1$s 发布了一段视频</string>
   <string name="ChannelMessageContact">%1$s 分享了一个联系信息</string>
   <string name="ChannelMessageMap">%1$s 发布了一个位置信息</string>
   <string name="ChannelMessageDocument">%1$s 发布了一个文件</string>
-  <string name="ChannelMessageGIF">%1$s 发布了一个GIF</string>
+  <string name="ChannelMessageGIF">%1$s 发布了一个 GIF</string>
   <string name="ChannelMessageAudio">%1$s 发布了一条语音消息</string>
-  <string name="ChannelMessageSticker">%1$s 发布了一个贴图</string>
+  <string name="ChannelMessageSticker">%1$s 发布了一个贴纸</string>
   <!--broadcasts-->
   <string name="NewBroadcastList">新建广播名单</string>
   <string name="EnterListName">输入名单名称</string>
@@ -196,7 +196,7 @@
   <string name="NoFiles">暂无文件...</string>
   <string name="FileUploadLimit">文件大小不能超过 %1$s</string>
   <string name="NotMounted">未挂载存储器</string>
-  <string name="UsbActive">已启用 USB 传输</string>
+  <string name="UsbActive">已启用USB传输</string>
   <string name="InternalStorage">内部存储器</string>
   <string name="ExternalStorage">外部存储器</string>
   <string name="SystemRoot">系统根目录</string>
@@ -244,8 +244,8 @@
   <string name="DeleteThisChat">删除该会话</string>
   <string name="SlideToCancel">滑动以取消</string>
   <string name="SaveToDownloads">保存到下载</string>
-  <string name="SaveToGIFs">保存到GIF图库</string>
-  <string name="DeleteGif">删除GIF？</string>
+  <string name="SaveToGIFs">保存到 GIF 库</string>
+  <string name="DeleteGif">删除该 GIF?</string>
   <string name="SaveToMusic">保存到音乐库</string>
   <string name="ShareFile">分享文件</string>
   <string name="ApplyLocalizationFile">使用此本地化文件</string>
@@ -266,7 +266,7 @@
   <string name="NobodyLikesSpamUrl">https://telegram.org/faq#can-39t-send-messages-to-non-contacts</string>
   <string name="MoreInfo">更多详情</string>
   <string name="ShareSendTo">发送给...</string>
-  <string name="TapHereGifs">点击此处访问已存的GIF </string>
+  <string name="TapHereGifs">点按这里访问保存的 GIF</string>
   <!--notification-->
   <string name="MessageLifetimeChanged">%1$s 已将阅后即焚计时器设定为 %2$s</string>
   <string name="MessageLifetimeChangedOutgoing">您已将阅后即焚计时器设定为 %1$s</string>
@@ -280,9 +280,9 @@
   <string name="NotificationMessageContact">%1$s 与您分享了一个联系信息</string>
   <string name="NotificationMessageMap">%1$s 给您发送了一个位置</string>
   <string name="NotificationMessageDocument">%1$s 给您发送了一个文件</string>
+  <string name="NotificationMessageGif">%1$s 给您发送了一个 GIF</string>
   <string name="NotificationMessageAudio">%1$s 给您发送了一条语音消息</string>
-  <string name="NotificationMessageGif">%1$s 给您发送了一个GIF</string>
-  <string name="NotificationMessageSticker">%1$s 给您发送了一个贴图</string>
+  <string name="NotificationMessageSticker">%1$s 给您发送了一个贴纸</string>
   <string name="NotificationMessageGroupText">%1$s @ %2$s: %3$s</string>
   <string name="NotificationMessageGroupNoText">%1$s 发送了一条消息到 %2$s 群组</string>
   <string name="NotificationMessageGroupPhoto">%1$s 发送了一张图片到 %2$s 群组</string>
@@ -290,9 +290,9 @@
   <string name="NotificationMessageGroupContact">%1$s 分享了一个联系信息到 %2$s 群组</string>
   <string name="NotificationMessageGroupMap">%1$s 发送了一个位置到 %2$s 群组</string>
   <string name="NotificationMessageGroupDocument">%1$s 发送了一个文件到群组 %2$s</string>
-  <string name="NotificationMessageGroupGif">%1$s 发送了一个GIF到群组 %2$s</string>
+  <string name="NotificationMessageGroupGif">%1$s 发送了一个 GIF 到群组 %2$s</string>
   <string name="NotificationMessageGroupAudio">%1$s 发送了一条语音消息到群组 %2$s</string>
-  <string name="NotificationMessageGroupSticker">%1$s 发送了一个贴图到群组 %2$s</string>
+  <string name="NotificationMessageGroupSticker">%1$s 发送了一个贴纸到群组 %2$s</string>
   <string name="NotificationInvitedToGroup">%1$s 邀请您加入 %2$s 群组</string>
   <string name="NotificationEditedGroupName">%1$s 编辑了%2$s 群组的名称</string>
   <string name="NotificationEditedGroupPhoto">%1$s 编辑了 %2$s 群组的图片</string>
@@ -395,23 +395,23 @@
   <string name="UsernameEmpty">无</string>
   <string name="ErrorOccurred">发生错误。</string>
   <!--stickers view-->
-  <string name="Stickers">贴图</string>
-  <string name="StickersInfo">欢迎艺术家们使用我们的 @stickers 机器人上传自己的贴图包。\n\n用户可以通过点击贴图并选择“添加到贴图库”的方式添加贴图。</string>
-  <string name="AddStickers">添加贴图</string>
-  <string name="AddToStickers">添加到贴图库</string>
-  <string name="AddStickersNotFound">未找到贴图</string>
-  <string name="StickersRemoved">已删除贴图</string>
-  <string name="AddStickersInstalled">已添加新贴图</string>
+  <string name="Stickers">贴纸</string>
+  <string name="StickersInfo">欢迎艺术家们使用我们的 @stickers 机器人上传自己的贴纸包。\n\n用户可以通过点击贴纸并选择“添加到贴纸库”的方式添加贴纸。</string>
+  <string name="AddStickers">添加贴纸包</string>
+  <string name="AddToStickers">添加到贴纸库</string>
+  <string name="AddStickersNotFound">未找到贴纸包</string>
+  <string name="StickersRemoved">贴纸包已移除</string>
+  <string name="AddStickersInstalled">新的贴纸包已添加</string>
   <string name="StickersHide">隐藏</string>
   <string name="StickersShow">显示</string>
   <string name="StickersShare">分享</string>
   <string name="StickersCopy">复制链接</string>
   <string name="StickersRemove">移除</string>
-  <string name="NoStickers">暂无贴图</string>
+  <string name="NoStickers">暂无贴纸</string>
   <!--settings view-->
   <string name="ResetNotificationsText">重置所有通知设置为默认值</string>
   <string name="TextSize">文字大小</string>
-  <string name="AskAQuestion">咨询</string>
+  <string name="AskAQuestion">向我们提问</string>
   <string name="EnableAnimations">开启动画效果</string>
   <string name="Unblock">取消屏蔽</string>
   <string name="UnblockText">长按用户取消屏蔽</string>
@@ -444,7 +444,7 @@
   <string name="ContactJoined">联系人已加入 Telegram</string>
   <string name="Language">语言</string>
   <string name="AskAQuestionInfo">请注意：Telegram 的技术支持由志愿者提供，反馈时请使用英文。我们会尽快回复您，但是您可能需要等待一段时间。<![CDATA[<br><br>]]>请前往 <![CDATA[<a href=\"https://telegram.org/faq#general\">Telegram FAQ（中文）</a>]]> 看看: 里面有各种常见问题和故障排除提示。</string>
-  <string name="AskButton">咨询志愿者</string>
+  <string name="AskButton">向志愿者提问</string>
   <string name="TelegramFaq">常见问题</string>
   <string name="TelegramFaqUrl">http://telegram-china.org/faq.html</string>
   <string name="DeleteLocalization">删除此本地化文件？</string>
@@ -473,7 +473,7 @@
   <string name="WhenConnectedOnWiFi">接入WiFi时</string>
   <string name="WhenRoaming">漫游时</string>
   <string name="NoMediaAutoDownload">暂无媒体文件</string>
-  <string name="AutoplayGifs">自动播放GIF</string>
+  <string name="AutoplayGifs">自动播放GIF </string>
   <string name="SaveToGallerySettings">保存到相册</string>
   <string name="EditName">编辑姓名</string>
   <string name="NotificationsPriority">优先级</string>
@@ -507,11 +507,11 @@
   <!--cache view-->
   <string name="CacheSettings">缓存设置</string>
   <string name="LocalDatabase">本地数据</string>
-  <string name="LocalDatabaseClear">清除缓存到本地的文本消息？</string>
-  <string name="LocalDatabaseInfo">清除本地数据会删除所有缓存到本地的文本消息，并压缩本地数据库以节省存储空间。由于保持运行Telegram需要一些数据，因此数据库空间不会被清零。\n\n完成这个操作可能需要几分钟时间。</string>
-  <string name="ClearMediaCache">清除缓存</string>
+  <string name="LocalDatabaseClear">清空缓存的消息记录？</string>
+  <string name="LocalDatabaseInfo">清空本地数据库将删除缓存在本地的聊天记录并压缩数据库以节省存储空间。Telegram需要一些数据来维持正常工作，所以数据库大小不会完全清零。\n\n这个操作需要一些时间来完成。</string>
+  <string name="ClearMediaCache">清除媒体缓存</string>
   <string name="CacheClear">清除</string>
-  <string name="CalculatingSize">计算中...</string>
+  <string name="CalculatingSize">正在计算...</string>
   <string name="LocalDocumentCache">文件</string>
   <string name="LocalPhotoCache">图片</string>
   <string name="LocalAudioCache">语音</string>
@@ -520,7 +520,7 @@
   <string name="LocalCache">其他文件</string>
   <string name="CacheEmpty">清空</string>
   <string name="KeepMedia">保留媒体文件</string>
-  <string name="KeepMediaInfo">为节省存储空间，在此期限内您未访问的来自云端的图片、视频以及其他文件，都会从此设备中删除。\n\n所有媒体文件会保留在Telegram云端，以备您需要时可再次下载。</string>
+  <string name="KeepMediaInfo">为节省存储空间，在此期限内您未访问的来自云端的图片、视频以及其他文件，都会从此设备中删除。\n\n所有媒体文件会保留在 Telegram 云端，以备您需要时再次下载（云端非永久存储）。</string>
   <string name="KeepMediaForever">永久保留</string>
   <!--sessions view-->
   <string name="SessionsTitle">显示设备</string>
@@ -552,7 +552,7 @@
   <string name="AutoLockDisabled">禁用</string>
   <string name="UnlockFingerprint">指纹解锁</string>
   <string name="FingerprintInfo">如要继续，请验证指纹</string>
-  <string name="FingerprintHelp">请按手指</string>
+  <string name="FingerprintHelp">请按下手指</string>
   <string name="FingerprintNotRecognized">未能识别指纹，请重试</string>
   <!--media view-->
   <string name="NoMedia">您可以在此群组分享图片和视频，并可在您所有已登录的设备上访问。</string>
@@ -588,7 +588,7 @@
   <string name="NoRecentGIFs">无最近的GIF</string>
   <string name="SearchImages">搜索图片</string>
   <string name="SearchImagesInfo">通过网络搜索</string>
-  <string name="SearchGifs">搜索GIF</string>
+  <string name="SearchGifs">搜索 GIF</string>
   <string name="SearchImagesTitle">通过搜索网络</string>
   <string name="SearchGifsTitle">搜索 GIF </string>
   <string name="CropImage">裁剪</string>
@@ -745,14 +745,14 @@
   <string name="ActionInviteYou">您通过邀请链接加入了群组。</string>
   <string name="ActionInviteUser">un1 通过邀请链接加入了群组。</string>
   <string name="ActionKickUser">un1 移除了 un2</string>
-  <string name="ActionLeftUser">un1 已退出群组</string>
+  <string name="ActionLeftUser">un1 离开了群组</string>
   <string name="ActionAddUser">un1 添加了 un2</string>
   <string name="ActionRemovedPhoto">un1 删除了群组图片</string>
   <string name="ActionChangedPhoto">un1 更换了群组图片</string>
   <string name="ActionChangedTitle">un1 将群组名称更改为 un2</string>
   <string name="ActionCreateGroup">un1 创建了该群组</string>
   <string name="ActionYouKickUser">您已将 un2 移除</string>
-  <string name="ActionYouLeftUser">您退出了群组</string>
+  <string name="ActionYouLeftUser">您离开了该群组</string>
   <string name="ActionYouAddUser">您添加了 un2</string>
   <string name="ActionYouRemovedPhoto">您删除了群组图片</string>
   <string name="ActionYouChangedPhoto">您更换了群组图片</string>
@@ -762,17 +762,18 @@
   <string name="ActionAddUserYou">un1 添加了您</string>
   <string name="ActionAddUserSelf">un1 重返该群组</string>
   <string name="ActionAddUserSelfYou">您已返回该群组</string>
+  <string name="UnsupportedMedia">当前的 Telegram 版本无法查看此条消息。 请前往这里下载新版： https://telegram.org/update</string>
   <string name="AttachPhoto">图片</string>
   <string name="AttachVideo">视频</string>
   <string name="AttachGif">GIF</string>
   <string name="AttachLocation">位置</string>
   <string name="AttachContact">联系人</string>
   <string name="AttachDocument">文件</string>
-  <string name="AttachSticker">贴图</string>
+  <string name="AttachSticker">贴纸</string>
   <string name="AttachAudio">语音</string>
   <string name="FromYou">您</string>
-  <string name="ActionTakeScreenshootYou">您已截屏！</string>
-  <string name="ActionTakeScreenshoot">un1 已截屏！</string>
+  <string name="ActionTakeScreenshootYou">您已截屏</string>
+  <string name="ActionTakeScreenshoot">un1 已截屏</string>
   <!--Alert messages-->
   <string name="InvalidPhoneNumber">无效的手机号码</string>
   <string name="CodeExpired">验证码已过期，请重新登录</string>
@@ -786,7 +787,7 @@
   <string name="NoMailInstalled">请发送邮件到 sms@stel.com 告诉我们您遇到的问题。</string>
   <string name="NoHandleAppInstalled">您没有安装可执行 \'%1$s\' 类型文件的软件，请先安装。</string>
   <string name="InviteUser">该用户尚未加入 Telegram ，是否发送邀请？</string>
-  <string name="AreYouSure">您确定？</string>
+  <string name="AreYouSure">您确定吗？</string>
   <string name="AddToTheGroupTitle">添加 %1$s 到群组 %2$s？</string>
   <string name="AddToTheGroupForwardCount">要转发的最近消息数：</string>
   <string name="AddToTheGroup">添加 %1$s 到此群组？</string>
@@ -795,7 +796,6 @@
   <string name="SendMessagesTo">发送消息给 %1$s ？</string>
   <string name="SendContactTo">发送联系人信息给 %1$s?</string>
   <string name="AreYouSureLogout">您确定要注销？\n\n注意：您可以同时在所有设备上无缝使用 Telegram。\n\n注销将会清除所有的私密聊天数据。</string>
-
   <string name="AreYouSureSessions">您确定要注销所有其他设备？</string>
   <string name="AreYouSureDeleteAndExit">您确定要删除并退出该群组？</string>
   <string name="AreYouSureDeleteThisChat">您确定要删除此对话？</string>
@@ -833,7 +833,7 @@
   <string name="Page2Message"><![CDATA[<b>Telegram</b> 收发信息<br/>快过其它任何软件。]]></string>
   <string name="Page3Message"><![CDATA[<b>Telegram</b> 永久免费。无广告。<br/>无须收费订阅。]]></string>
   <string name="Page4Message"><![CDATA[<b>Telegram</b> 保障您的消息安全<br/>免受黑客攻击。]]></string>
-  <string name="Page5Message"><![CDATA[<b>Telegram</b> 对消息与媒体文件 <br/> 无任何大小限制。]]></string>
+  <string name="Page5Message"><![CDATA[<b>Telegram</b> 对消息与媒体文件 <br/> 无任何数量限制。]]></string>
   <string name="Page6Message"><![CDATA[<b>Telegram</b> 让您可以从多个设备中 <br/> 收发您的消息]]></string>
   <string name="Page7Message"><![CDATA[<b>Telegram</b>私密信息经过高强度加密<br/>并且支持阅后即焚]]></string>
   <string name="StartMessaging">开始聊天</string>
@@ -946,12 +946,12 @@
   <string name="Meters_few">%1$d 米</string>
   <string name="Meters_many">%1$d 米</string>
   <string name="Meters_other">%1$d 米</string>
-  <string name="Stickers_zero">%1$d 个贴图</string>
-  <string name="Stickers_one">%1$d 个贴图</string>
-  <string name="Stickers_two">%1$d 个贴图</string>
-  <string name="Stickers_few">%1$d 个贴图</string>
-  <string name="Stickers_many">%1$d 个贴图</string>
-  <string name="Stickers_other">%1$d 个贴图</string>
+  <string name="Stickers_zero">%1$d 个贴纸</string>
+  <string name="Stickers_one">%1$d 个贴纸</string>
+  <string name="Stickers_two">%1$d 个贴纸</string>
+  <string name="Stickers_few">%1$d 个贴纸</string>
+  <string name="Stickers_many">%1$d 个贴纸</string>
+  <string name="Stickers_other">%1$d 个贴纸</string>
   <string name="Photos_zero">%1$d 张图片</string>
   <string name="Photos_one">%1$d 张图片</string>
   <string name="Photos_two">%1$d 张图片</string>
@@ -1013,12 +1013,12 @@
   <string name="ForwardedContact_few">%1$d 位转发的联系人</string>
   <string name="ForwardedContact_many">%1$d 位转发的联系人</string>
   <string name="ForwardedContact_other">%1$d 位转发的联系人</string>
-  <string name="ForwardedSticker_zero">%1$d 张转发的贴图</string>
-  <string name="ForwardedSticker_one">转发的贴图</string>
-  <string name="ForwardedSticker_two">%1$d 张转发的贴图</string>
-  <string name="ForwardedSticker_few">%1$d 张转发的贴图</string>
-  <string name="ForwardedSticker_many">%1$d 张转发的贴图</string>
-  <string name="ForwardedSticker_other">%1$d 张转发的贴图</string>
+  <string name="ForwardedSticker_zero">%1$d 张转发的贴纸</string>
+  <string name="ForwardedSticker_one">转发的贴纸</string>
+  <string name="ForwardedSticker_two">%1$d 张转发的贴纸</string>
+  <string name="ForwardedSticker_few">%1$d 张转发的贴纸</string>
+  <string name="ForwardedSticker_many">%1$d 张转发的贴纸</string>
+  <string name="ForwardedSticker_other">%1$d 张转发的贴纸</string>
   <string name="AndOther_zero">和其他的 %1$d 个</string>
   <string name="AndOther_one">和其他的 %1$d 个</string>
   <string name="AndOther_two">和其他的 %1$d 个</string>
@@ -1026,12 +1026,12 @@
   <string name="AndOther_many">和其他的 %1$d 个</string>
   <string name="AndOther_other">和其他的 %1$d 个</string>
   <!--date formatters-->
-  <string name="formatterMonthYear">yyyy\'年\'MM\'月\'</string>
-  <string name="formatterMonth">MM\'月\'dd\'日\'</string>
-  <string name="formatterYear">yy.MM.dd</string>
-  <string name="formatterYearMax">yyyy\'年\'MM\'月\'dd\'日\'</string>
-  <string name="chatDate">MM\'月\'d\'日\'</string>
-  <string name="chatFullDate">yyyy\'年\'MM\'月\'dd\'日\'</string>
+  <string name="formatterMonthYear">yyyy\'年\'M\'月\'</string>
+  <string name="formatterMonth">M\'月\'dd\'日\'</string>
+  <string name="formatterYear">yy-MM-dd</string>
+  <string name="formatterYearMax">yyyy\'年\'M\'月\'dd\'日\'</string>
+  <string name="chatDate">M\'月\'d\'日\'</string>
+  <string name="chatFullDate">yyyy\'年\'M\'月\'dd\'日\'</string>
   <string name="formatterWeek">EEE</string>
   <string name="formatterDay24H">HH:mm</string>
   <string name="formatterDay12H">h:mm a</string>
@@ -1039,6 +1039,5 @@
   <!--update text-->
   <string name="updateText">Telegram for Android has been updated. New in version 3.4.0:\n\nGIF revolution: up to 20x faster downloading/sending, autoplay, save GIFs to a dedicated tab on the sticker panel.\n\nMore about GIFs:\nhttps://telegram.org/blog/gif-revolution\n\nInline bots: A new way to add bot content to any chat. Type a bot\'s username and your query in the text field to get instant results and send them to your chat partner. Try typing “@gif dog” in your next chat. Sample bots: @gif, @wiki, @bing, @vid, @bold.\n\nMore about inline bots:\nhttps://telegram.org/blog/inline-bots</string>
   <string name="updateBuild">704</string>
-  <string name="UnsupportedMedia">当前的 Telegram 版本无法查看此条消息。 请前往这里下载新版： https://telegram.org/update</string>
   <string name="UseSystemEmoji">使用系统 Emoji 字体</string>
 </resources>
