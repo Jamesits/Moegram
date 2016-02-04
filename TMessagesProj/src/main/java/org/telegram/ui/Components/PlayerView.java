@@ -33,7 +33,6 @@ import org.telegram.messenger.NotificationCenter;
 import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.AudioPlayerActivity;
-import android.graphics.Typeface;
 
 public class PlayerView extends FrameLayout implements NotificationCenter.NotificationCenterDelegate {
 
@@ -226,7 +225,7 @@ public class PlayerView extends FrameLayout implements NotificationCenter.Notifi
             if (lastMessageObject != messageObject) {
                 lastMessageObject = messageObject;
                 SpannableStringBuilder stringBuilder = new SpannableStringBuilder(String.format("%s - %s", messageObject.getMusicAuthor(), messageObject.getMusicTitle()));
-                TypefaceSpan span = new TypefaceSpan(Typeface.DEFAULT_BOLD);
+                TypefaceSpan span = new TypefaceSpan(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
                 stringBuilder.setSpan(span, 0, messageObject.getMusicAuthor().length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
                 titleTextView.setText(stringBuilder);
             }

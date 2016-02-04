@@ -41,7 +41,6 @@ import org.telegram.ui.Components.AvatarDrawable;
 import org.telegram.ui.Components.BackupImageView;
 import org.telegram.ui.ActionBar.BaseFragment;
 import org.telegram.ui.Components.LayoutHelper;
-import android.graphics.Typeface;
 
 public class ContactAddActivity extends BaseFragment implements NotificationCenter.NotificationCenterDelegate {
 
@@ -151,7 +150,7 @@ public class ContactAddActivity extends BaseFragment implements NotificationCent
         nameTextView.setSingleLine(true);
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);
         nameTextView.setGravity((LocaleController.isRTL ? Gravity.RIGHT : Gravity.LEFT));
-        nameTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         frameLayout.addView(nameTextView);
         layoutParams3 = (FrameLayout.LayoutParams) nameTextView.getLayoutParams();
         layoutParams3.width = LayoutHelper.WRAP_CONTENT;

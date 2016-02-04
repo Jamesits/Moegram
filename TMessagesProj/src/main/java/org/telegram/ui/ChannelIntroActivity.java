@@ -23,7 +23,6 @@ import org.telegram.messenger.LocaleController;
 import org.telegram.messenger.R;
 import org.telegram.ui.ActionBar.ActionBar;
 import org.telegram.ui.ActionBar.BaseFragment;
-import android.graphics.Typeface;
 
 public class ChannelIntroActivity extends BaseFragment {
 
@@ -134,7 +133,7 @@ public class ChannelIntroActivity extends BaseFragment {
         createChannelText.setTextColor(0xff4c8eca);
         createChannelText.setGravity(Gravity.CENTER);
         createChannelText.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
-        createChannelText.setTypeface(Typeface.DEFAULT_BOLD);
+        createChannelText.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         createChannelText.setText(LocaleController.getString("ChannelAlertCreate", R.string.ChannelAlertCreate));
         viewGroup.addView(createChannelText);
         createChannelText.setOnClickListener(new View.OnClickListener() {

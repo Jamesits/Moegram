@@ -25,7 +25,6 @@ import org.telegram.tgnet.TLRPC;
 import org.telegram.ui.Components.LayoutHelper;
 
 import java.util.Locale;
-import android.graphics.Typeface;
 
 public class SessionCell extends FrameLayout {
 
@@ -54,7 +53,7 @@ public class SessionCell extends FrameLayout {
         nameTextView.setTextColor(0xff212121);
         nameTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
         nameTextView.setLines(1);
-        nameTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        nameTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         nameTextView.setMaxLines(1);
         nameTextView.setSingleLine(true);
         nameTextView.setEllipsize(TextUtils.TruncateAt.END);

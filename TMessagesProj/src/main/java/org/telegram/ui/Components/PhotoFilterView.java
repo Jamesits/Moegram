@@ -53,7 +53,6 @@ import javax.microedition.khronos.egl.EGLDisplay;
 import javax.microedition.khronos.egl.EGLSurface;
 import javax.microedition.khronos.opengles.GL;
 import javax.microedition.khronos.opengles.GL10;
-import android.graphics.Typeface;
 
 @SuppressLint("NewApi")
 public class PhotoFilterView extends FrameLayout {
@@ -1423,7 +1422,7 @@ public class PhotoFilterView extends FrameLayout {
         cancelTextView.setBackgroundResource(R.drawable.bar_selector_picker);
         cancelTextView.setPadding(AndroidUtilities.dp(29), 0, AndroidUtilities.dp(29), 0);
         cancelTextView.setText(LocaleController.getString("Cancel", R.string.Cancel).toUpperCase());
-        cancelTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        cancelTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         frameLayout.addView(cancelTextView);
         layoutParams = (LayoutParams) cancelTextView.getLayoutParams();
         layoutParams.width = LayoutHelper.WRAP_CONTENT;
@@ -1438,7 +1437,7 @@ public class PhotoFilterView extends FrameLayout {
         doneTextView.setBackgroundResource(R.drawable.bar_selector_picker);
         doneTextView.setPadding(AndroidUtilities.dp(29), 0, AndroidUtilities.dp(29), 0);
         doneTextView.setText(LocaleController.getString("Done", R.string.Done).toUpperCase());
-        doneTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        doneTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         frameLayout.addView(doneTextView);
         layoutParams = (LayoutParams) doneTextView.getLayoutParams();
         layoutParams.width = LayoutHelper.WRAP_CONTENT;

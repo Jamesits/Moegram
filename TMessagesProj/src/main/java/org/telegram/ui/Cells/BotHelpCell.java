@@ -31,7 +31,6 @@ import org.telegram.ui.Components.LinkPath;
 import org.telegram.ui.Components.ResourceLoader;
 import org.telegram.ui.Components.TypefaceSpan;
 import org.telegram.ui.Components.URLSpanNoUnderline;
-import android.graphics.Typeface;
 
 public class BotHelpCell extends View {
 
@@ -98,7 +97,7 @@ public class BotHelpCell extends View {
         stringBuilder.append("\n\n");
         stringBuilder.append(text);
         MessageObject.addLinks(stringBuilder);
-        stringBuilder.setSpan(new TypefaceSpan(Typeface.DEFAULT_BOLD), 0, help.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        stringBuilder.setSpan(new TypefaceSpan(AndroidUtilities.getTypeface("fonts/rmedium.ttf")), 0, help.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         Emoji.replaceEmoji(stringBuilder, textPaint.getFontMetricsInt(), AndroidUtilities.dp(20), false);
         textLayout = new StaticLayout(stringBuilder, textPaint, width, Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false);
         width = 0;

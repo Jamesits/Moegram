@@ -31,7 +31,6 @@ import org.telegram.ui.Components.ResourceLoader;
 import org.telegram.ui.Components.SeekBar;
 
 import java.io.File;
-import android.graphics.Typeface;
 
 public class ChatMusicCell extends ChatBaseCell implements SeekBar.SeekBarDelegate {
 
@@ -80,7 +79,7 @@ public class ChatMusicCell extends ChatBaseCell implements SeekBar.SeekBarDelega
             titlePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             titlePaint.setTextSize(AndroidUtilities.dp(16));
             titlePaint.setColor(0xff212121);
-            titlePaint.setTypeface(Typeface.DEFAULT_BOLD);
+            titlePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
 
             authorPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             authorPaint.setTextSize(AndroidUtilities.dp(15));

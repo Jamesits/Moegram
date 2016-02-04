@@ -20,7 +20,6 @@ import android.text.TextPaint;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.FileLog;
 import org.telegram.messenger.R;
-import android.graphics.Typeface;
 
 public class TimerDrawable extends Drawable {
 
@@ -39,7 +38,7 @@ public class TimerDrawable extends Drawable {
             timePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
             timePaint.setTextSize(AndroidUtilities.dp(11));
             timePaint.setColor(0xffffffff);
-            timePaint.setTypeface(Typeface.DEFAULT_BOLD);
+            timePaint.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         }
     }
 

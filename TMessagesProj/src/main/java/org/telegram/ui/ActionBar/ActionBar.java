@@ -30,7 +30,6 @@ import org.telegram.messenger.R;
 import org.telegram.ui.Components.LayoutHelper;
 
 import java.util.ArrayList;
-import android.graphics.Typeface;
 
 public class ActionBar extends FrameLayout {
 
@@ -154,7 +153,7 @@ public class ActionBar extends FrameLayout {
         titleTextView.setSingleLine(true);
         titleTextView.setEllipsize(TextUtils.TruncateAt.END);
         titleTextView.setTextColor(0xffffffff);
-        titleTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        titleTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         addView(titleTextView, 0, LayoutHelper.createFrame(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.LEFT | Gravity.TOP));
     }
 

@@ -28,7 +28,6 @@ import org.telegram.ui.Components.CheckBox;
 import org.telegram.ui.Components.LayoutHelper;
 
 import java.util.ArrayList;
-import android.graphics.Typeface;
 
 public class AudioCell extends FrameLayout {
 
@@ -85,7 +84,7 @@ public class AudioCell extends FrameLayout {
         titleTextView = new TextView(context);
         titleTextView.setTextColor(0xff212121);
         titleTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 16);
-        titleTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        titleTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         titleTextView.setLines(1);
         titleTextView.setMaxLines(1);
         titleTextView.setSingleLine(true);

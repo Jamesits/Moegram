@@ -51,7 +51,6 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Timer;
 import java.util.TimerTask;
-import android.graphics.Typeface;
 
 public class ShareFrameLayout extends FrameLayout {
 
@@ -105,7 +104,7 @@ public class ShareFrameLayout extends FrameLayout {
         });
 
         doneButtonBadgeTextView = new TextView(context);
-        doneButtonBadgeTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        doneButtonBadgeTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         doneButtonBadgeTextView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
         doneButtonBadgeTextView.setTextColor(0xffffffff);
         doneButtonBadgeTextView.setGravity(Gravity.CENTER);
@@ -120,7 +119,7 @@ public class ShareFrameLayout extends FrameLayout {
         doneButtonTextView.setGravity(Gravity.CENTER);
         doneButtonTextView.setCompoundDrawablePadding(AndroidUtilities.dp(8));
         doneButtonTextView.setText(LocaleController.getString("Send", R.string.Send).toUpperCase());
-        doneButtonTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        doneButtonTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         doneButton.addView(doneButtonTextView, LayoutHelper.createLinear(LayoutHelper.WRAP_CONTENT, LayoutHelper.WRAP_CONTENT, Gravity.CENTER_VERTICAL));
 
         ImageView imageView = new ImageView(context);

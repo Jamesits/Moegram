@@ -52,7 +52,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.StringTokenizer;
-import android.graphics.Typeface;
 
 public class DocumentSelectActivity extends BaseFragment {
 
@@ -177,7 +176,7 @@ public class DocumentSelectActivity extends BaseFragment {
 
         selectedMessagesCountTextView = new NumberTextView(actionMode.getContext());
         selectedMessagesCountTextView.setTextSize(18);
-        selectedMessagesCountTextView.setTypeface(Typeface.DEFAULT_BOLD);
+        selectedMessagesCountTextView.setTypeface(AndroidUtilities.getTypeface("fonts/rmedium.ttf"));
         selectedMessagesCountTextView.setTextColor(0xff737373);
         selectedMessagesCountTextView.setOnTouchListener(new View.OnTouchListener() {
             @Override
