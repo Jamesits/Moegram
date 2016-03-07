@@ -90,13 +90,13 @@ android {
     productFlavors {
         Moegram {
             applicationId "me.swineson.moegram.messenger"
-            versionCode 536
+            versionCode 537
             versionName '0.1.9'
         }
 
         MoegramTestMode {
             applicationId "me.swineson.moegram.messenger.debug"
-            versionCode 536
+            versionCode 537
             versionName '0.1.9'
         }
     }
