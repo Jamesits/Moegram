@@ -267,9 +267,9 @@ public class Emoji {
                 b = getBounds();
             }
 
-            if (!canvas.quickReject(b.left, b.top, b.right, b.bottom, Canvas.EdgeType.AA)) {
+            //if (!canvas.quickReject(b.left, b.top, b.right, b.bottom, Canvas.EdgeType.AA)) {
                 canvas.drawBitmap(emojiBmp[info.page][info.page2], info.rect, b, paint);
-            }
+            //}
         }
 
         @Override
