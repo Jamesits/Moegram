@@ -4,7 +4,7 @@
 
 <resources>
     <string name="AppName">Moegram</string>
-    <string name="AppNameBeta">Telegram-bèta</string>
+    <string name="AppNameBeta">Moegram Beta</string>
     <string name="LanguageName">Nederlands</string>
     <string name="LanguageNameInEnglish">Dutch</string>
     <string name="LanguageCode">nl</string>
