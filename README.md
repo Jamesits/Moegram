@@ -1,5 +1,12 @@
 # Moegram
 
+## **This project is no longer maintained!**
+I'm sorry for this, but with the slow release of Telegram source code, I don't have any more patience to continue working on this project.
+
+For an alternative of this, try [Plus Messenger](https://play.google.com/store/apps/details?id=org.telegram.plus) or [Lagatgram](https://play.google.com/store/apps/details?id=org.ilwt.lagatgram). 
+
+--------------
+
 This project adds an option to display Google's Emoji Font and keeps minimal changes to other part of the application.
 
 [Download Moegram from Google Play](https://play.google.com/store/apps/details?id=me.swineson.moegram.messenger)
