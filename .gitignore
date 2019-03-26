@@ -6,6 +6,7 @@ obj/
 local.properties
 *.keystore
 gradle.properties
+.externalNativeBuild
 
 # project config
 BuildVars.java
