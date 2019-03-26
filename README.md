@@ -27,6 +27,8 @@ Moegram channel: [https://telegram.me/moegram](https://telegram.me/moegram)
 
 These instructions apply to both this repository (Moegram) and official Telegram for Android sources.
 
+DO NOT use Windows -- you will end up in make error 87.
+
 ### Dependencies
 
  * Android SDK
@@ -50,21 +52,7 @@ brew cask install android-studio
 
 ### Build NDK Libraries
 
- 1. Fire up a terminal;
- 2. `cd` to `project_root/TMessagesProj/jni`;
- 3. run `ndk-build`.
-
-On build success, you will see the following files:
-```
-project_root/TMessagesProj/libs
-├── armeabi
-│   └── libtmessages.xx.so
-├── armeabi-v7a
-│   └── libtmessages.xx.so
-└── x86
-    └── libtmessages.xx.so
-```
-where `xx` is a version number.
+ 1. Run Gradle sync, it will be automatically built
 
 ### Customize APK
 
@@ -76,19 +64,18 @@ Note:
  * Visit [https://github.com/DrKLO/Telegram/blob/master/TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java](https://github.com/DrKLO/Telegram/blob/master/TMessagesProj/src/main/java/org/telegram/messenger/BuildVars.java) for the most recent value of `BUILD_VERSION`. Telegram servers use this value to determine if certain type of messages are supported and send a fallback value if not. A wrong value may cause fatals since message types change day by day.
  * For `HOCKEY_APP_HASH` and `HOCKEY_APP_HASH_DEBUG`, you can use any random 32 digit HEX number (for example, the MD5 of any sentence you like) in string format if you don't want to use Hockey. A wrong length will cause fatal error.
  * Do not change `GCM_SENDER_ID`, or GCM will be completely unusable.
+ * `SMS_HASH`
+
+#### Fill `google-service.json`
+ 1. Go to https://console.firebase.google.com/u/0/
+ 2. Create a new project
+ 3. Click on the android icon on the project homepage hero
+ 4. Fill in application package name
+ 5. Download `google-service.json`
+ 6. Put it under `./TMessagesProj`
 
 #### Edit Package Identifier and Version
-Open `project_root/TMessagesProj/build.gradle`, add the following content **before** last `}`:
-```gradle
-    productFlavors {
-        some_name {
-            applicationId "com.example.some_name"
-            versionCode 123
-            versionName '0.0.1'
-        }
-    }
-```
-then modify it on your needs.
+Open `project_root/TMessagesProj/build.gradle`, edit defaultConfig.
 
 #### Edit Name
 Edit all `string.xml` in `project_root/TMessagesProj/src/main/res/values*`, modify the following line:
