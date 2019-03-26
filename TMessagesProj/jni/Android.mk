@@ -163,6 +163,7 @@ LOCAL_SRC_FILES := \
 ./libwebp/dsp/dec_mips32.c \
 ./libwebp/dsp/dec_neon.$(NEON) \
 ./libwebp/dsp/dec_sse2.c \
+./libwebp/dsp/dec_sse2.c \
 ./libwebp/dsp/enc.c \
 ./libwebp/dsp/enc_avx2.c \
 ./libwebp/dsp/enc_mips32.c \
@@ -216,7 +217,7 @@ include $(BUILD_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_CPPFLAGS := -frtti
-LOCAL_CFLAGS += '-DVERSION="1.3.1"' -DFLAC__NO_MD5 -DFLAC__INTEGER_ONLY_LIBRARY -DFLAC__NO_ASM
+LOCAL_CFLAGS += -DVERSION="1.3.1" -DFLAC__NO_MD5 -DFLAC__INTEGER_ONLY_LIBRARY -DFLAC__NO_ASM
 LOCAL_CFLAGS += -D_REENTRANT -DPIC -DU_COMMON_IMPLEMENTATION -fPIC -DHAVE_SYS_PARAM_H
 LOCAL_CFLAGS += -O3 -funroll-loops -finline-functions
 LOCAL_LDLIBS := -lz -lm
