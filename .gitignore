@@ -9,6 +9,7 @@ gradle.properties
 
 # project config
 BuildVars.java
+google-services.json
 
 # build result
 *.apk
