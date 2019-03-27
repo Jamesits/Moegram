@@ -144,7 +144,6 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
     private int chatRow;
     private int helpRow;
     private int versionRow;
-    private int useSystemEmojiRow;
     private int rowCount;
 
     private final static int edit_name = 1;
@@ -209,7 +208,6 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
         dataRow = rowCount++;
         chatRow = rowCount++;
         languageRow = rowCount++;
-        useSystemEmojiRow = rowCount++;
         helpRow = rowCount++;
         versionRow = rowCount++;
 
@@ -1184,7 +1182,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                                 abi = "universal " + Build.CPU_ABI + " " + Build.CPU_ABI2;
                                 break;
                         }
-                        cell.setText(String.format(Locale.US, "Moegram v%s (%d) %s" + (BuildVars.DEBUG_VERSION ? " [TEST MODE]" : "") + "\nBased on Telegram for Android\nBuilt with \u2764 by James Swineson", pInfo.versionName, code, abi));
+                        cell.setText(LocaleController.formatString("TelegramVersion", R.string.TelegramVersion, String.format(Locale.US, "v%s (%d) %s", pInfo.versionName, code, abi)));
                     } catch (Exception e) {
                         FileLog.e(e);
                     }
@@ -1206,8 +1204,6 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                 return 0;
             } else if (position == settingsSectionRow) {
                 return 1;
-            } else if (position == useSystemEmojiRow) {
-                return 3;
             } else if (position == notificationRow || position == privacyRow || position == languageRow ||
                     position == dataRow || position == chatRow || position == helpRow) {
                 return 2;

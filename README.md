@@ -75,7 +75,7 @@ Note:
  6. Put it under `./TMessagesProj`
 
 #### Edit Package Identifier and Version
-Open `project_root/TMessagesProj/build.gradle`, edit defaultConfig.
+Open `project_root/TMessagesProj/build.gradle`, edit `defaultConfig`.
 
 #### Edit Name
 Edit all `string.xml` in `project_root/TMessagesProj/src/main/res/values*`, modify the following line:
@@ -86,8 +86,7 @@ Note: it may be faster using Translation Editor of Android Studio.
 
 ### Build APK
 
- 1. Ensure you have built NDK libraries;
- 2. Select Build -> Generate Signed APK… from Android Studio.
+ 1. Select Build -> Generate Signed APK… from Android Studio.
 
 Once you see a log entry like `APK(s) generated successfully`, find your APK under `project_root/TMessagesProj/TMessagesProj-your_flavor_name-release.apk`.
 
