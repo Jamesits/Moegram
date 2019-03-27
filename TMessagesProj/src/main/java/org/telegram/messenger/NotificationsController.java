@@ -2750,8 +2750,8 @@ public class NotificationsController {
                 } else if (needVibrate == 1) {
                     mBuilder.setVibrate(vibrationPattern = new long[]{0, 100, 0, 100});
                 } else if (needVibrate == 0 || needVibrate == 4) {
-                    mBuilder.setDefaults(NotificationCompat.DEFAULT_VIBRATE);
-                    vibrationPattern = new long[]{};
+                    mBuilder.setDefaults(NotificationCompat.DEFAULT_LIGHTS | NotificationCompat.DEFAULT_SOUND);
+                    vibrationPattern = new long[]{0L};
                 } else if (needVibrate == 3) {
                     mBuilder.setVibrate(vibrationPattern = new long[]{0, 1000});
                 }
